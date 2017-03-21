@@ -2,8 +2,18 @@
   "name": "quantal-nodejs-bookshelf-base-repository",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "scripts": {
+    "standard": "node node_modules/standard/bin/cmd",
+    "test": "npm run standard && node_modules/mocha/bin/mocha test/"
+  },
   "dependencies": {
-    "quantal-errors": "^0.0.2"
+    "bookshelf": "^0.10.3",
+    "bookshelf-camelcase": "^1.1.4",
+    "joi": "^10.2.2",
+    "knex": "^0.12.8",
+    "pg": "^6.1.4",
+    "quantal-base-model": "^0.0.5",
+    "quantal-errors": "^0.0.5"
   },
   "devDependencies": {
     "code": "^4.0.0",
@@ -13,6 +23,7 @@
     "eslint-plugin-node": "^4.2.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1",
+    "bookshelf-modelbase": "^2.10.3",
     "mocha": "^2.4.5",
     "standard": "^9.0.1"
   }
